@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     resources :airlines, param: :slug
-    resources :reviews, only [:create, :destroy]
+    resources :reviews, only: [:create, :destroy]
   end
 
 
